@@ -10,13 +10,13 @@ if (2===2) {
     console.log("This is True");
 }
 
-let myName = "Rishabh";
+// let myName = "Rishabh";
 if (myName === myName) {
     console.log(`This is again atrue statement
     Nice statement`);
 }
 
-let myName = "Rishabh";
+// let myName = "Rishabh";
 if (myName === window.myName) {
     console.log("This will not get executed in nodejs. ");
 }
