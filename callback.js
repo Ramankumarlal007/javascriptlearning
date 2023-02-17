@@ -26,5 +26,12 @@ function isEven(element){
 
         // callback
 
+        // let result = [2,12,4,6,8].every(isEven);
+        // console.log(result);
+
+
         let result = [2,12,4,6,8].every(isEven);
+        console.log(result);
+
+        let result = [2,3,4,6,8].every((e)) => (e % 2 ===2);
         console.log(result);
