@@ -35,3 +35,6 @@ var states1 = new Array("Bihar", "Delhi", "Mumbai", "Assam",3);
 
 // String to Array
 console.log(Array.from("switzerland"));
+
+let result2 = [2,44,36,82].every((e) => (e % 2 === 0));
+console.log(result2);
