@@ -21,13 +21,14 @@ var user = {
 
 
 var iphone = {
-    Ram : 32;
-    color : Silver;
-    size : ["5.44 inch"];
-    display : Retina HD display;
-    chip : M1;
-    Camera : ["12MP"];
-    faceTime : ["1080HD recording"];
+    Ram : 32,
+    color : "Silver",
+    size : "5.44 inch",
+    display : "RetinaHDdisplay",
+    chip : "M1",
+    Camera : "12MP",
+    faceTime : "1080HD recording"
 }
 
 console.log(iphone);
+console.table(iphone)
