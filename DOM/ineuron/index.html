@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO JAVASCRIPT bOOTCAMP</h1>
+   <ul>
+   </ul>
+    <button onclick="maths()" type="submit" id="fsjs2">Submit</button>
+   <p id="jack"> </p>
+   <script>
+    function maths(){
+        let value = prompt("Solve this 99-79");
+        if (value == 20) {
+            document.getElementById("fsjs2").style.background = "orange";
+            document.getElementById("jack").innerText = `Successfully logged IN`
+            }
+            else {
+                document.getElementById("fsjs2").style.background = "red";
+                document.getElementById("jack").innerText = `please try again`
+            }
+    }
+
+
+
+    //insert Inner HTML is one of the way
+    const list = `
+    <li>Rohit</li>
+    <li>Rishabh</li>
+    <li>Raman</li>
+    <li>japan</li>
+    <li>usa</li>
+    `;
+    const unlist = document.querySelector("ul")
+    unlist.innerHTML = list;
+
+    // how to create entire element on screen i.e h1 , p tag 
+    const title = document.createElement("h1");   // element hi is crerated. nowwe can use the title for css insertion
+    title.className = "title1";
+    title.style.fontSize = "25px";
+    title.style.color = "#12B0E8";
+    title.textContent = "Rishabh is a cute little boy";
+    console.log(title);
+    document.body.appendChild(title);
+   
+
+    // ifwe need to create   multiple element times? what is the approach
+    //    we will use loop
+    // For loop
+            for(let i = 0; i < 4; i++){
+                let paragraph = document.createElement("p");
+                paragraph.className = "digitalOcean";
+                paragraph.style.color = "steelblue";
+                paragraph.style.fontSize = "20px";
+                paragraph.style.fontFamily = "montserrat"
+                console.log(paragraph);
+                paragraph.textContent = "Rishabh is learning javascript happily"
+                document.body.appendChild(paragraph);
+            }
+
+   </script>
+</body>
+</html>

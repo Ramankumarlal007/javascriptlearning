@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h1>Learning Event Listener</h1>
+    <p id="java">Event Listener</p>
+    
+    <script>
+        // document.addEventListener("name of event", "whom should i call when certain event happens")
+        // document.addEventListener("Event / action", whom should i call)
+        document.addEventListener("click", hello)
+        function hello(){
+            document.getElementById("java").innerText = `mouse clicked`
+}
+// click, doubleclick, mouseenter, mouseleave, mouseover, input, keydown(down arrow key), keyup, keypress, onload
+    </script>
+</body>
+</html>
